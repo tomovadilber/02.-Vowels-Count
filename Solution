@@ -1,0 +1,42 @@
+using System;
+using System.Linq;
+using System.Text;
+
+namespace ArraysEx_
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Practice();
+
+        }
+
+        static void Practice()
+        {
+
+
+            string word = Console.ReadLine();
+
+            char[] vowels = new char[] { 'a', 'o', 'u', 'e', 'i' };
+
+            int cunter = 0;
+
+            foreach (char ch in word.ToLower())
+            {
+                if (vowels.Contains(ch))
+                {
+                    cunter++;
+                }
+            }
+
+            Console.WriteLine(cunter);
+        }
+
+
+
+
+
+    }
+}
+
